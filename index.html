@@ -133,38 +133,28 @@
 
         <div class="section">
             <h3>🪐 Planet Details</h3>
-            <p>From the scorching surface of Venus to the icy rings of Saturn, ask AstroVerse for an in-depth, detailed description of any planet in our solar system. The AI assistant will provide you with all the planetary knowledge you need to explore our cosmic neighborhood.</p>
+            <p>From the scorching surface of Venus to the icy rings of Saturn, get in-depth, detailed descriptions of any planet in our solar system. Gather all the planetary knowledge you need to explore our cosmic neighborhood.</p>
         </div>
         
         <div class="section">
             <h3>🌠 Space Facts</h3>
-            <p>Did you know space is completely silent? Click the chat icon to discover a randomized collection of amazing trivia and cosmic phenomena. There is always something new and fascinating to learn about the vast universe we live in.</p>
+            <p>Did you know space is completely silent? Discover a collection of amazing trivia and cosmic phenomena. There is always something new and fascinating to learn about the vast universe we live in.</p>
         </div>
 
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 AstroVerse Project. Powered by Watson Assistant.</p>
+        <p>© 2026 AstroVerse Project. Explore the Cosmos.</p>
     </footer>
 
-    <!-- ========================================== -->
-    <!-- WATSON CHATBOT INTEGRATION SCRIPT -->
-    <!-- ========================================== -->
+    <!-- Watson Assistant Integration Script -->
     <script>
       window.watsonAssistantChatOptions = {
-        integrationID: "58c0a50f-7171-4de5-994a-f141da6adee9", // Aapki ID
-        region: "https://integrations.eu-de.assistant.watson.appdomain.cloud", // Aapka region
-        serviceInstanceID: "07759be1-4cde-4477-8582-0f1ddeaba834", // Aapki Instance ID
-        onLoad: async (instance) => {
-          // Setting the chat theme to match the AstroVerse dark space aesthetic
-          instance.updateCustomCSSVariables({
-            '$interactive-01': '#4dc4ff', // Cyan buttons
-            '$interactive-02': '#0088cc', // Hover color
-            '$ui-background': '#ffffff'   
-          });
-          await instance.render();
-        }
+        integrationID: "58c0a50f-7171-4de5-994a-f141da6adee9", // The ID of this integration.
+        region: "https://integrations.eu-de.assistant.watson.appdomain.cloud", // The region your integration is hosted in.
+        serviceInstanceID: "07759be1-4cde-4477-8582-0f1ddeaba834", // The ID of your service instance.
+        onLoad: async (instance) => { await instance.render(); }
       };
       setTimeout(function(){
         const t=document.createElement('script');
@@ -172,6 +162,5 @@
         document.head.appendChild(t);
       });
     </script>
-
 </body>
 </html>
